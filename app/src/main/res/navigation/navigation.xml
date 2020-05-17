@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="ru.gmasalskih.lesson2.TitleFragment"
+        android:label="fragment_exercise1"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_exercise1"
+            app:destination="@id/exercise1" />
+        <action
+            android:id="@+id/action_titleFragment_to_exercise2"
+            app:destination="@id/exercise2" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercise1"
+        android:name="ru.gmasalskih.lesson2.Exercise1"
+        android:label="fragment_exercise1"
+        tools:layout="@layout/fragment_exercise1" />
+    <fragment
+        android:id="@+id/exercise2"
+        android:name="ru.gmasalskih.lesson2.Exercise2"
+        android:label="fragment_exercise2"
+        tools:layout="@layout/fragment_exercise2" />
+</navigation>
