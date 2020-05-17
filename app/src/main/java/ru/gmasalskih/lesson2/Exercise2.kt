@@ -79,3 +79,4 @@ class Exercise2 : Fragment() {
             .append(eventText)
     }
 }
+
